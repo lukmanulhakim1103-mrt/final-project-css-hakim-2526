@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img{
+            width: 50%;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 5px 10px 15px;
+            margin-left: 25%;
+            margin-bottom: 50px;
+            margin-top: 60px;
+        }
+
+        .search{
+            text-align: center;
+        }
+
+        .search input{
+            width: 75%;
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+        .search button{
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+         nav{
+            width: 100%;
+            margin-top: 50px;
+            align-content: center;
+        }
+
+        nav a{
+            font-family: sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+            background:  lightskyblue;
+            color: black;
+            border-radius: 20px;
+            width: 5%;
+            padding: 12px;
+        }
+
+         nav a:hover{
+            background: blue;
+            color: white;
+        }
+
+         .container {
+            width: 90%;
+            margin: 40px auto;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+        }
+
+        .portofolio img {
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid white;
+            box-shadow: 2px 4px 6px;
+        }
+
+        .portofolio p {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30vh; 
+            background: black;
+        }
+
+        .main p{
+            font-family: sans-serif;
+            color: white;
+            font-size: larger;
+            position: absolute;
+            margin-bottom: 11%;
+        }
+
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: #fff;
+            margin: 20px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 100px;
+            font-family: sans-serif;
+            overflow: hidden;
+            box-shadow: 5px 10px 20px grey;
+            transition: all .3s  ease-out
+        }
+
+        .icon:hover i{
+            color: #fff;
+        }
+
+        .icon:hover{
+            width: 400px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #fff;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .icon .fa-youtube{
+            color: red;
+        }
+
+        .yt:hover{
+            background: red;
+        }
+
+        .icon .fa-x-twitter{
+            color: black;
+        }
+
+        .twt:hover{
+            background: black;
+        }
+
+        .icon .fa-facebook-f{
+            color: blue;
+        }
+
+        .fb:hover{
+            background: blue;
+        }
+
+        .icon .fa-tiktok{
+            color: black;
+        }
+
+        .tt:hover{
+            background: black;
+        }
+
+        .icon .fa-instagram{
+            color: rgb(195, 60, 83);
+        }
+
+        .ig:hover{
+            background:  rgb(195, 60, 83);
+        }
+
+        .icon .fa-pinterest{
+            color: red;
+        }
+
+        .pt:hover{
+            background: red;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: purple;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="logo.png" alt=""></div>
+
+    <div class="search">
+      <form action="galery.html" method="get">
+      <label for="search-input"></label>
+      <input type="search" name="search" placeholder="Galery resmi">
+      <button type="submit">Cari</button>
+      </form>
+    </div>
+
+    <nav>
+        <a href="galery.html">Beranda</a>
+        <a href="makanan.html">Makanan</a>
+        <a href="hewan.html">Hewan</a>
+        <a href="background.html">Background</a>
+        <a href="anime.html">Anime</a>
+        <a href="game.html">Game</a>
+        <a href="education.html">Education</a>
+        <a href="coding.html">Codding</a>
+        <a href="sad.html">Sad</a>
+        <a href="world-asthetic.html">world asthetic</a>
+        <a href="japanese.html">Japanese</a>
+        <a href="al-irsyad.html">Al-irsyad</a>
+        <a href="indonesia.html">Indonesia</a>
+        <a href="student.html">Student</a>
+        <a href="art.html">Art</a>
+    </nav>
+
+    <div class="container">
+        <div class="portofolio"><img src="porto1.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto2.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto3.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto4.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto5.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto6.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto7.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto8.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto9.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto10.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto11.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto12.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto13.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto14.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto15.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto16.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto17.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto18.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto19.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto20.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto21.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto22.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto23.jpg" alt=""></div>
+        <div class="portofolio"><img src="porto24.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan1.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan2.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan3.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan4.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan5.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan6.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan7.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan8.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan9.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan10.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan11.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan12.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan13.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan14.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan15.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan16.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan17.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan18.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan19.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan20.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan21.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan22.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan23.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan24.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan25.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan26.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan27.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan28.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan29.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan30.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan31.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan32.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan33.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan34.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan35.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan36.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan37.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan38.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan39.jpg" alt=""></div>
+        <div class="portofolio"><img src="makanan40.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan1.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan2.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan3.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan4.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan5.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan6.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan7.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan8.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan9.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan10.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan11.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan12.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan13.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan14.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan15.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan16.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan17.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan18.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan19.jpg" alt=""></div>
+        <div class="portofolio"><img src="hewan20.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg5.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg2.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg3.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg4.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg1.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg6.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg7.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg8.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg9.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg10.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg11.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg12.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg13.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg14.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg15.jpg" alt=""></div>
+        <div class="portofolio"><img src="bg16.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm1.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm2.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm3.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm4.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm5.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm6.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm7.jpg" alt=""></div>
+        <div class="portofolio"><img src="gm8.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu1.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu2.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu3.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu4.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu5.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu6.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu7.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu8.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu9.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu10.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu11.jpg" alt=""></div>
+        <div class="portofolio"><img src="edu12.jpg" alt=""></div>
+        <div class="portofolio"><img src="c1.jpg" alt=""></div>
+        <div class="portofolio"><img src="c2.jpg" alt=""></div>
+        <div class="portofolio"><img src="c3.jpg" alt=""></div>
+        <div class="portofolio"><img src="c4.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad1.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad2.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad3.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad4.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad5.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad6.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad7.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad8.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad9.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad10.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad11.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad12.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad13.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad14.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad15.jpg" alt=""></div>
+        <div class="portofolio"><img src="sad16.jpg" alt=""></div>
+        <div class="portofolio"><img src="world1.jpg" alt=""></div>
+        <div class="portofolio"><img src="world2.jpg" alt=""></div>
+        <div class="portofolio"><img src="world3.jpg" alt=""></div>
+        <div class="portofolio"><img src="world4.jpg" alt=""></div>
+        <div class="portofolio"><img src="world5.jpg" alt=""></div>
+        <div class="portofolio"><img src="world6.jpg" alt=""></div>
+        <div class="portofolio"><img src="world7.jpg" alt=""></div>
+        <div class="portofolio"><img src="world8.jpg" alt=""></div>
+        <div class="portofolio"><img src="world9.jpg" alt=""></div>
+        <div class="portofolio"><img src="world10.jpg" alt=""></div>
+        <div class="portofolio"><img src="world11.jpg" alt=""></div>
+        <div class="portofolio"><img src="world12.jpg" alt=""></div>
+        <div class="portofolio"><img src="world13.jpg" alt=""></div>
+        <div class="portofolio"><img src="world14.jpg" alt=""></div>
+        <div class="portofolio"><img src="world15.jpg" alt=""></div>
+        <div class="portofolio"><img src="world16.jpg" alt=""></div>
+        <div class="portofolio"><img src="world17.jpg" alt=""></div>
+        <div class="portofolio"><img src="world18.jpg" alt=""></div>
+        <div class="portofolio"><img src="world19.jpg" alt=""></div>
+        <div class="portofolio"><img src="world20.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan1.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan2.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan3.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan4.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan5.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan6.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan7.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan8.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan9.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan10.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan11.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan12.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan13.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan14.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan15.jpg" alt=""></div>
+        <div class="portofolio"><img src="japan16.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad1.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad2.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad3.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad4.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad5.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad6.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad7.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad8.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad9.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad10.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad11.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad12.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad13.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad14.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad15.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad16.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad17.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad18.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad19.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad20.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad21.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad22.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad23.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad24.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad25.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad26.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad27.jpg" alt=""></div>
+        <div class="portofolio"><img src="irsyad28.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo1.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo2.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo3.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo4.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo5.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo6.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo7.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo8.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo9.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo10.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo11.jpg" alt=""></div>
+        <div class="portofolio"><img src="indo12.jpg" alt=""></div>
+        <div class="portofolio"><img src="st1.jpg" alt=""></div>
+        <div class="portofolio"><img src="st2.jpg" alt=""></div>
+        <div class="portofolio"><img src="st3.jpg" alt=""></div>
+        <div class="portofolio"><img src="st4.jpg" alt=""></div>
+        <div class="portofolio"><img src="st5.jpg" alt=""></div>
+        <div class="portofolio"><img src="st6.jpg" alt=""></div>
+        <div class="portofolio"><img src="st7.jpg" alt=""></div>
+        <div class="portofolio"><img src="st8.jpg" alt=""></div>
+        <div class="portofolio"><img src="st9.jpg" alt=""></div>
+        <div class="portofolio"><img src="st10.jpg" alt=""></div>
+        <div class="portofolio"><img src="st11.jpg" alt=""></div>
+        <div class="portofolio"><img src="st12.jpg" alt=""></div>
+    </div>
+
+    <div class="main">
+        <p>Tolong follow akun media sosial kami, terimakasih.</p>
+        <div class="icon yt">
+            <i class="fa-brands fa-youtube"></i>
+            <span><a href="https://www.youtube.com/channel/UCADMdl5YkGax4Wme4e-a3Hw" target="_blank">Youtube</a></span>
+        </div>
+
+        <div class="icon twt">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span><a href="https://www.twitter.com" target="_blank">Twitter</a></span>
+        </div>
+
+        <div class="icon fb">
+           <i class="fa-brands fa-facebook-f"></i>
+            <span><a href="https://www.facebook" target="_blank">Facebook</a></span>
+        </div>
+
+        <div class="icon tt">
+            <i class="fa-brands fa-tiktok"></i>
+            <span><a href="https://www.tiktok.com/@chibi_bennet.genshin" target="_blank">Tiktok</a></span>
+        </div>
+
+        <div class="icon ig">
+            <i class="fa-brands fa-instagram"></i>
+            <span><a href="https://www.instagram.com/bennet_natlan29?igsh=MmFmMHY5bWdrZG5y" target="_blank">Instagram</a></span>
+        </div>
+
+        <div class="icon pt">
+            <i class="fa-brands fa-pinterest"></i>
+            <span><a href="https://id.pinterest.com/" target="_blank">Pinterest</a></span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PixelArt Studio | All Rights Reserved | Didukung oleh
+            <i class="fa-brands fa-pinterest"></i>
+            <span><a href="https://id.pinterest.com/" target="_blank">Pinterest</a></span>
+        </p>
+        </footer>
+</body>
+</html>

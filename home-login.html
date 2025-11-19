@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelArt Studio</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        background-color: #1a1a1a;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: purple;
+        padding: 15px 50px;
+        box-shadow: 0 2px 10px black;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+      color: white;
+      }
+
+      .banner {
+        text-align: center;
+        padding: 120px 20px;
+        background: linear-gradient(135deg, lightpink, purple);
+        color: white;
+        margin-bottom: 90px;
+      }
+
+      .banner h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+      }
+
+      .banner p {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+      }
+
+      .banner a {
+        background: white;
+        color: purple;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 12px black;
+        transition: all 0.3s ease;
+      }
+
+      .banner a:hover {
+        background: purple;
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      .pixel{
+        text-align: center;
+      }
+
+      .cari{
+        text-align: center;
+        padding: 120px 10px;
+        background-image: url(pngtree-aesthetic-pixel-art-background-starry-sky-and-hills-picture-image_16410928.jpg);
+        border-radius: 50px;
+        margin-bottom: 100px;
+      }
+
+      .cari input{
+        background: white;
+        color: black;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 12px black;
+        transition: all 0.3s ease;
+      }
+
+      .cari button{
+        background: white;
+        color: black;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 12px black;
+        transition: all 0.3s ease;
+      }
+
+      .cari button:hover{
+        color: whitesmoke;
+        background-color: purple;
+      }
+
+      .beranda{
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 2fr 2fr;
+      }
+
+      .jd h1{
+        color: aliceblue;
+        font-family: sans-serif;
+        margin-left: 30%;
+        margin-bottom: 50px;
+      }
+
+      .content-news img{
+        width: 50%;
+        border-radius: 30px;
+        border: 2px solid white;
+        box-shadow: 2px 4px 6px white;
+        margin-left: 70px;
+      }
+
+      .content-news p{
+        background: linear-gradient(purple,pink);
+        color: white;
+        width: 50%;
+        padding: 30px;
+        border-radius: 30px;
+      }
+
+      footer{
+        background: purple;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+      }
+  </style>
+</head>
+  <body>
+
+    <header>
+      <div class="logo"><img src="logo.png" alt="logo1" width="50%"></div>
+      <nav>
+        <a href="home-login.html">Home</a>
+        <a href="saya.html" target="_blank">Saya</a>
+        <a href="profil.html">Profil</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="kontak.html" target="_blank">Kontak</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+        <a href="index.html">Log-out</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <h1>“Where Pixels Meet Magic ✨”</h1>
+      <p>PixelArt Studio menghadirkan desain visual modern yang bikin imajinasi yang luas dan Magic.</p>
+      <a href="galery.html" target="_blank" class="btn">Pelajari selengkapnya</a>
+    </section>
+
+    <div class="pixel">
+      <img src="judul.png" alt="gambar1" width="50%">
+    </div>
+
+    <section class="cari">
+      <div class="search">
+        <form action="portofolio.html" method="get">
+        <label for="search-input"></label>
+        <input type="search" name="search" placeholder="Search PixelArt Studio">
+        <button type="submit">Cari</button>
+      </form>
+      </div>
+    </section>
+
+    <div class="jd"><h1>>Breaking News🌎</h1></div>
+
+    <div class="beranda">
+
+      <div class="content-news">
+        <img src="one-ui8.png" alt="gambar1">
+      </div>
+
+      <div class="content-news">
+        <p>
+          One UI 8 adalah antarmuka pengguna terbaru Samsung yang berbasis Android 16,
+          dirilis pada September 2025 dan mulai menggulirkan pembaruannya untuk berbagai perangkat.
+        </p>
+      </div>
+
+      <div class="content-news">
+      <img src="wd10.jpg" alt="gambar2">
+      </div>
+
+      <div class="content-news">
+        <p>
+          Dukungan Windows 10 secara resmi berakhir pada 14 Oktober 2025,
+          yang berarti tidak akan ada lagi pembaruan keamanan atau bantuan teknis gratis setelah tanggal tersebut.
+        </p>
+      </div>
+
+      <div class="content-news">
+      <img src="wd11.jpg" alt="gambar3">
+      </div>
+
+      <div class="content-news">
+        <p>
+        Microsoft telah merilis Windows 11 versi 25H2, yang merupakan pembaruan fitur yang berfokus pada peningkatan stabilitas,
+        keamanan, dan efisiensi. Pembaruan ini tidak menghadirkan perubahan besar secara drastis.
+      </p>
+      </div>
+
+      <div class="content-news">
+      <img src="wd12.jpg" alt="gambar4">
+      </div>
+
+      <div class="content-news">
+        <p> 
+        Microsoft belum mengumumkan tanggal rilis resmi Windows 12, namun berdasarkan rumor dan laporan industri,
+        diperkirakan akan dirilis pada akhir tahun 2025 atau awal 2026. 
+        </p>
+      </div>
+
+      <div class="content-news">
+      <img src="pxil.jpg" alt="gambar5">
+      </div>
+
+      <div class="content-news">
+        <p> 
+        PixelArt akan mengupdate sistem Ui dan Ux pada tanggal 10 november 2025 dengan nama baru Ui dan Ux nya
+        <i>Hyper pixel Ai Os2</i> dan selain itu pixelArt membuat brand collab dengan perusahaan pembuat Laptop<b>HP</b>. 
+        dan terakhir Pixel Ai merilis Handphone baru namanya <i>Pixel Ai S12 5g</i>
+        </p>
+      </div>
+    </div>
+      
+    <footer>
+      <p>&copy; 2025 PixelArt Studio | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
