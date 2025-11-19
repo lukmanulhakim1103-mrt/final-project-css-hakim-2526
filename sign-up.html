@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        body{
+            background-image: url(pngtree-aesthetic-pixel-art-background-starry-sky-and-hills-picture-image_16410928.jpg);
+            margin-top: 100px;
+            position: relative;
+        }
+
+        div{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .sign-up{
+           border-radius: 30px;
+           background-image: url(pngtree-aesthetic-pixel-art-background-starry-sky-and-hills-picture-image_16410928.jpg)no-repeat;
+           box-shadow: 0 0 12px black;
+           width: 50%;
+           border: 2px solid black;
+           padding-bottom: 40px;
+           text-align: center;
+        }
+
+        .logo img{
+            width: 30%;
+        }
+
+        .masukan{
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .masukan input{
+            border: 2px solid black;
+            border-radius: 45px;
+            padding: 20px;
+            background: white;
+            color: black;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        select{
+            margin-top: 20px;
+        }
+
+        .btn{
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+
+        .btn .submit{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 45px;
+            padding: 20px;
+            background: blue;
+            text-align: center;
+            margin-top: 10px;
+            width: 20%;
+        }
+        .btn .submit:hover{
+            background: greenyellow;
+            color: white;
+        }
+        .btn .back{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 45px;
+            padding: 20px;
+            background: red;
+            text-align: center;
+            margin-top: 10px;
+            width: 20%;
+        }
+        .btn .back:hover{
+            background: purple;
+            color: white;
+        }
+
+        .pilihan a{
+            text-decoration: none;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .pilihan a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-up">
+        <div class="logo"><img src="judul.png" alt="logo"></div>
+
+    <div class="masukan">
+
+        <input type="nama" placeholder="nama"><br>
+        <input type="username" placeholder="Username"><br>
+        <input type="email" placeholder="Masukan E-mail"> <br>
+        <input type="password" placeholder="masukan pasword"> <br>
+        <input type="tel" placeholder="No-Telepon"> <br>
+        <input type="date" placeholder="Umur"><br>
+
+        <select name="negara">
+            <option value="">--Pilih Negara--</option>
+            <option value="ID">Indonesia</option>
+            <option value="US">Amerika Serikat</option>
+            <option value="SG">Singapura</option>
+            <option value="MY">Malaysia</option>
+            <option value="JP">Jepang</option>
+        </select> <br>
+
+    </div>
+
+        <div class="btn">
+        <a class="submit" href="welcome.html"><b>Sign-In</b></a>
+        <a class="back" href="index.html"><b>Kembali</b></a>
+        </div>
+
+        <div class="pilihan">
+        <a href="log-in.html">Logn-In</a>
+        <a href="sign-up.html">Reset</a>
+        </div>
+    </div>
+</body>
+</html>

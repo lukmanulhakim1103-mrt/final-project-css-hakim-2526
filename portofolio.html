@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #1a1a1a;
+            scroll-behavior: smooth;
+        } 
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: purple;
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .judul img {
+            width: 50%;
+            display: block;
+            margin: 60px auto 20px;
+        }
+
+        .judul h3 {
+            color: white;
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+            margin-bottom: 40px;
+            line-height: 1,7em;
+        }
+
+        .search{
+            text-align: center;
+        }
+
+        .search input{
+            width: 75%;
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+        .search button{
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+        .animation {
+            display: flex;
+            width: 95%;
+            border-radius: 15px;
+            margin: 50px auto;
+            overflow-x: hidden;
+        }
+
+        .group {
+            display: flex;
+            gap: 1em;
+            padding: 1em;
+            animation: spin 30s infinite linear;
+        }
+
+        .bg {
+            min-width: 250px;
+        }
+
+        .bg img {
+            width: 100%;
+            
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        @keyframes spin {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+
+        .sub1 h2 {
+            margin-top: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+        }
+
+        .portofolio img {
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+
+        .portofolio p {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+         .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30vh; 
+            background: black;
+        }
+
+        .main p{
+            font-family: sans-serif;
+            color: white;
+            font-size: larger;
+            position: absolute;
+            margin-bottom: 11%;
+        }
+
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: #fff;
+            margin: 20px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 100px;
+            font-family: sans-serif;
+            overflow: hidden;
+            box-shadow: 5px 10px 20px grey;
+            transition: all .3s  ease-out
+        }
+
+        .icon:hover i{
+            color: #fff;
+        }
+
+        .icon:hover{
+            width: 400px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #fff;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .icon .fa-youtube{
+            color: red;
+        }
+
+        .yt:hover{
+            background: red;
+        }
+
+        .icon .fa-x-twitter{
+            color: black;
+        }
+
+        .twt:hover{
+            background: black;
+        }
+
+        .icon .fa-facebook-f{
+            color: blue;
+        }
+
+        .fb:hover{
+            background: blue;
+        }
+
+        .icon .fa-tiktok{
+            color: black;
+        }
+
+        .tt:hover{
+            background: black;
+        }
+
+        .icon .fa-instagram{
+            color: rgb(195, 60, 83);
+        }
+
+        .ig:hover{
+            background:  rgb(195, 60, 83);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: purple;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo"><img src="logo.png" alt="logo1" width="50%"></div>
+    <nav>
+      <a href="home-login.html">Home</a>
+      <a href="saya.html" target="_blank">Saya</a>
+      <a href="profil.html">Profil</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="kontak.html" target="_blank">Kontak</a>
+      <a href="tentang-kami.html">Tentang Kami</a>
+      <a href="index.html">Log-out</a>
+    </nav>
+    </header>
+  
+    <div class="judul"><img src="portofolio judul.png" alt="logo2">
+    <h3>Nih hasil karya kita — campuran antara ide liar, desain keren, dan sedikit kopi ☕. <br>
+        Tiap project punya vibe-nya sendiri, dan kita selalu pastiin hasilnya ngena banget di mata dan hati klien. <br>
+        Lihat-lihat aja, siapa tau cocok sama style kamu 😎✨
+    </h3>
+
+     <div class="search">
+      <form action="galery.html" method="get">
+      <label for="search-input"></label>
+      <input type="search" name="search" placeholder="Galery resmi">
+      <button type="submit">Cari</button>
+      </form>
+    </div>
+
+    <div class="animation">
+        <div class="group">
+        <div class="bg"><img src="g1.jpg" alt="1"></div>
+        <div class="bg"><img src="g2.jpg" alt="2"></div>
+        <div class="bg"><img src="g3.jpg" alt="3"></div>
+        <div class="bg"><img src="g4.jpg" alt="4"></div>
+        <div class="bg"><img src="g5.jpg" alt="5"></div>
+        <div class="bg"><img src="g6.jpg" alt="6"></div>
+        <div class="bg"><img src="g7.jpg" alt="7"></div>
+        <div class="bg"><img src="g8.jpg" alt="8"></div>
+        <div class="bg"><img src="g9.jpg" alt="9"></div>
+        <div class="bg"><img src="g10.jpg" alt="10"></div>
+        <div class="bg"><img src="g11.jpg" alt="11"></div>
+        <div class="bg"><img src="g12.jpg" alt="12"></div>
+        <div class="bg"><img src="g13.jpg" alt="13"></div>
+        <div class="bg"><img src="g14.jpg" alt="14"></div>
+        <div class="bg"><img src="g15.jpg" alt="15"></div>
+        <div class="bg"><img src="g16.jpg" alt="16"></div>
+        <div class="bg"><img src="g17.jpg" alt="17"></div>
+        <div class="bg"><img src="g18.jpg" alt="18"></div>
+        <div class="bg"><img src="g19.jpg" alt="19"></div>
+        <div class="bg"><img src="g20.jpg" alt="20"></div>
+        <div class="bg"><img src="g21.jpg" alt="21"></div>
+        <div class="bg"><img src="g22.jpg" alt="22"></div>
+        <div class="bg"><img src="g23.jpg" alt="23"></div>
+        <div class="bg"><img src="g24.jpg" alt="24"></div>
+        </div>
+
+        <div aria-hidden="true"  class="group">
+        <div class="bg"><img src="g1.jpg" alt="1"></div>
+        <div class="bg"><img src="g2.jpg" alt="2"></div>
+        <div class="bg"><img src="g3.jpg" alt="3"></div>
+        <div class="bg"><img src="g4.jpg" alt="4"></div>
+        <div class="bg"><img src="g5.jpg" alt="5"></div>
+        <div class="bg"><img src="g6.jpg" alt="6"></div>
+        <div class="bg"><img src="g7.jpg" alt="7"></div>
+        <div class="bg"><img src="g8.jpg" alt="8"></div>
+        <div class="bg"><img src="g9.jpg" alt="9"></div>
+        <div class="bg"><img src="g10.jpg" alt="10"></div>
+        <div class="bg"><img src="g11.jpg" alt="11"></div>
+        <div class="bg"><img src="g12.jpg" alt="12"></div>
+        <div class="bg"><img src="g13.jpg" alt="13"></div>
+        <div class="bg"><img src="g14.jpg" alt="14"></div>
+        <div class="bg"><img src="g15.jpg" alt="15"></div>
+        <div class="bg"><img src="g16.jpg" alt="16"></div>
+        <div class="bg"><img src="g17.jpg" alt="17"></div>
+        <div class="bg"><img src="g18.jpg" alt="18"></div>
+        <div class="bg"><img src="g19.jpg" alt="19"></div>
+        <div class="bg"><img src="g20.jpg" alt="20"></div>
+        <div class="bg"><img src="g21.jpg" alt="21"></div>
+        <div class="bg"><img src="g22.jpg" alt="22"></div>
+        <div class="bg"><img src="g23.jpg" alt="23"></div>
+        <div class="bg"><img src="g24.jpg" alt="24"></div>
+        </div>
+
+    </div>
+
+    <div class="sub1"><h2>Galery Art Tester</h2></div>
+    <div class="container">
+        <div class="portofolio"><img src="porto1.jpg" alt="gambar1"><p>art buatan @adi</p></div>
+        <div class="portofolio"><img src="porto2.jpg" alt="gambar2"><p>art buatan @agha</p></div>
+        <div class="portofolio"><img src="porto3.jpg" alt="gambar3"><p>art buatan @afif</p></div>
+        <div class="portofolio"><img src="porto4.jpg" alt="gambar4"><p>art buatan @akbar</p></div>
+        <div class="portofolio"><img src="porto5.jpg" alt="gambar5"><p>art buatan @ahnaf</p></div>
+        <div class="portofolio"><img src="porto6.jpg" alt="gambar6"><p>art buatan @abduh</p></div>
+        <div class="portofolio"><img src="porto7.jpg" alt="gambar6"><p>art buatan @akhira</p></div>
+        <div class="portofolio"><img src="porto8.jpg" alt="gambar6"><p>art buatan @dandi</p></div>
+        <div class="portofolio"><img src="porto9.jpg" alt="gambar6"><p>art buatan @fathir</p></div>
+        <div class="portofolio"><img src="porto10.jpg" alt="gambar6"><p>art buatan @fadil</p></div>
+        <div class="portofolio"><img src="porto11.jpg" alt="gambar6"><p>art buatan @hafidz</p></div>
+        <div class="portofolio"><img src="porto12.jpg" alt="gambar6"><p>art buatan @khairi</p></div>
+        <div class="portofolio"><img src="porto13.jpg" alt="gambar6"><p>art buatan @lukman</p></div>
+        <div class="portofolio"><img src="porto14.jpg" alt="gambar6"><p>art buatan @nazrul</p></div>
+        <div class="portofolio"><img src="porto15.jpg" alt="gambar6"><p>art buatan @olan</p></div>
+        <div class="portofolio"><img src="porto16.jpg" alt="gambar6"><p>art buatan @yuri</p></div>
+        <div class="portofolio"><img src="porto17.jpg" alt="gambar6"><p>art buatan @athifa</p></div>
+        <div class="portofolio"><img src="porto18.jpg" alt="gambar6"><p>art buatan @quen</p></div>
+        <div class="portofolio"><img src="porto19.jpg" alt="gambar6"><p>art buatan @elvira</p></div>
+        <div class="portofolio"><img src="porto20.jpg" alt="gambar6"><p>art buatan @hapsoh</p></div>
+        <div class="portofolio"><img src="porto21.jpg" alt="gambar6"><p>art buatan @aya</p></div>
+        <div class="portofolio"><img src="porto22.jpg" alt="gambar6"><p>art buatan @balqis</p></div>
+        <div class="portofolio"><img src="porto23.jpg" alt="gambar6"><p>art buatan @aprilian-rizky</p></div>
+        <div class="portofolio"><img src="porto24.jpg" alt="gambar6"><p>art buatan @alim</p></div>
+    </div>
+
+    <div class="main">
+        <p>Tolong follow akun media sosial kami, terimakasih.</p>
+        <div class="icon yt">
+            <i class="fa-brands fa-youtube"></i>
+            <span><a href="https://www.youtube.com/channel/UCADMdl5YkGax4Wme4e-a3Hw" target="_blank">Youtube</a></span>
+        </div>
+
+        <div class="icon twt">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span><a href="https://www.twitter.com" target="_blank">Twitter</a></span>
+        </div>
+
+        <div class="icon fb">
+           <i class="fa-brands fa-facebook-f"></i>
+            <span><a href="https://www.facebook" target="_blank">Facebook</a></span>
+        </div>
+
+        <div class="icon tt">
+            <i class="fa-brands fa-tiktok"></i>
+            <span><a href="https://www.tiktok.com/@chibi_bennet.genshin" target="_blank">Tiktok</a></span>
+        </div>
+
+        <div class="icon ig">
+            <i class="fa-brands fa-instagram"></i>
+            <span><a href="https://www.instagram.com/bennet_natlan29?igsh=MmFmMHY5bWdrZG5y" target="_blank">Instagram</a></span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PixelArt Studio | All Rights Reserved</p>
+        </footer>
+</body>
+</html>

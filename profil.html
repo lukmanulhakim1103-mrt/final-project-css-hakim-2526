@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #1a1a1a;
+            scroll-behavior: smooth;
+        } 
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: purple;
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+         .judul img{
+            width: 50%;
+            padding: 20px;
+            margin-left: 25%;
+        }
+
+        img{
+            border-radius: 30px;
+        }
+
+        .profil{
+            border: 2px solid black;
+            background: linear-gradient(rgb(0, 4, 122), purple);
+            border-radius: 30px;
+            text-align: center;
+            width: 50%;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .profil:hover{
+           background: linear-gradient(rgb(2, 8, 159), rgb(127, 223, 255));
+        }
+
+        .profil h3{
+            color: whitesmoke;
+        }
+
+        .profil h3:hover{
+            color: black;
+        }
+
+        .profil p{
+            color: whitesmoke;
+        }
+
+        .profil p:hover{
+            color: black;
+        }
+
+        .visi{
+            border: 2px solid black;
+            background: linear-gradient(yellow,rgb(255, 137, 94));
+            border-radius: 30px;
+            text-align: center;
+            width: 50%;
+            margin-right: 30px;
+            float: right;
+        }
+
+        .visi:hover{
+           background: linear-gradient(rgb(0, 4, 122), purple);
+        }
+
+        .visi h2{
+            color: black;
+        }
+
+        .visi h2:hover{
+            color: white;
+        }
+
+        .visi h3{
+            color: black;
+        }
+
+        .visi h3:hover{
+            color: white;
+        }
+
+        .misi{
+            border: 2px solid black;
+            background: linear-gradient(rgb(2, 8, 159), rgb(127, 223, 255));
+            width: 50%;
+            padding-bottom: 20px;
+            border-radius: 30px;
+            margin-top: 100px;
+        }
+
+        .misi:hover{
+            background: linear-gradient(yellow,rgb(255, 137, 94));
+        }
+
+        .misi h2{
+            color: white;
+        }
+
+        .misi h2:hover{
+            color: black;
+        }
+
+        .misi ol{
+            color: white;
+        }
+
+        .misi ol:hover{
+            color: black;
+        }
+
+        footer{
+            margin-top: 5%;
+            background: purple;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo"><img src="logo.png" alt="logo1" width="50%"></div>
+    <nav>
+      <a href="home-login.html">Home</a>
+      <a href="saya.html" target="_blank">Saya</a>
+      <a href="profil.html">Profil</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="kontak.html" target="_blank">Kontak</a>
+      <a href="tentang-kami.html">Tentang Kami</a>
+      <a href="index.html">Log-out</a>
+    </nav>
+  </header>
+
+    <div class="judul"><img src="judul.png" alt="logo"></div>
+    <img src="neon-pixel-paradise-stockcake.jpg" alt="neon">
+    <section class="profil">
+            <h3>Pfofil Kami</h4>
+            <p>
+                PixxelArt Studio adalah agensi kreatif yang berfokus pada desain grafis, 
+                ilustrasi digital, branding,
+                dan pengembangan identitas visual.
+                 Kami percaya bahwa setiap piksel memiliki cerita — dan tugas kami adalah membuat setiap cerita itu terlihat hidup, 
+                 menarik, dan bermakna.
+                 Dengan tim yang berisi desainer muda berbakat dan berpengalaman,
+                 kami menghadirkan hasil karya visual yang tidak hanya indah dilihat,
+                 tetapi juga kuat dalam pesan dan nilai estetikanya.
+                Kami membantu bisnis, brand, 
+                dan kreator untuk tampil menonjol melalui desain yang orisinil, modern, dan berkarakter.
+            </p>
+    </section>
+
+    <section class="visi">
+        <h2>🚀Visi</h2>
+        <h3>
+            Bikin dunia desain digital jadi lebih seru, berwarna, dan penuh karya orisinal yang nginspirasi banyak orang.
+        </h3>
+    </section>
+
+    <section class="misi">
+        <h2>⚡ Misi</h2>
+        <ol>
+           1.Ngeracik desain yang unik, eye-catching, dan punya vibe khas kamu banget. <br>
+           2.Gabungin teknologi + kreativitas biar hasilnya nggak cuma keren tapi juga impactful. <br>
+           3.Ngerjain semua proyek dengan fun tapi tetap profesional — hasil maksimal, tanpa drama. <br>
+           4.Ngebangun komunitas kreatif biar makin banyak desainer lokal yang bisa unjuk gigi. <br>
+           5.Terus eksplor ide baru biar karya kami nggak pernah ngebosenin.
+        </ol>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 PixelArt Studio | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
