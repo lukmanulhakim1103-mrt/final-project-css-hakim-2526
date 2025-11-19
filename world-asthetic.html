@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Asthetic</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img{
+            width: 50%;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 5px 10px 15px;
+            margin-left: 25%;
+            margin-bottom: 50px;
+            margin-top: 60px;
+        }
+
+        .search{
+            text-align: center;
+        }
+
+        .search input{
+            width: 75%;
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+        .search button{
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px black;
+            transition: all 0.3s ease;
+        }
+
+         nav{
+            width: 100%;
+            margin-top: 50px;
+            align-content: center;
+        }
+
+        nav a{
+            font-family: sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+            background:  lightskyblue;
+            color: black;
+            border-radius: 20px;
+            width: 5%;
+            padding: 12px;
+        }
+
+         nav a:hover{
+            background: blue;
+            color: white;
+        }
+
+         .container {
+            width: 90%;
+            margin: 40px auto;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+        }
+
+        .world img {
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid white;
+            box-shadow: 2px 4px 6px;
+        }
+
+        .world p {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30vh; 
+            background: black;
+        }
+
+        .main p{
+            font-family: sans-serif;
+            color: white;
+            font-size: larger;
+            position: absolute;
+            margin-bottom: 11%;
+        }
+
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: #fff;
+            margin: 20px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 100px;
+            font-family: sans-serif;
+            overflow: hidden;
+            box-shadow: 5px 10px 20px grey;
+            transition: all .3s  ease-out
+        }
+
+        .icon:hover i{
+            color: #fff;
+        }
+
+        .icon:hover{
+            width: 400px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #fff;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .icon .fa-youtube{
+            color: red;
+        }
+
+        .yt:hover{
+            background: red;
+        }
+
+        .icon .fa-x-twitter{
+            color: black;
+        }
+
+        .twt:hover{
+            background: black;
+        }
+
+        .icon .fa-facebook-f{
+            color: blue;
+        }
+
+        .fb:hover{
+            background: blue;
+        }
+
+        .icon .fa-tiktok{
+            color: black;
+        }
+
+        .tt:hover{
+            background: black;
+        }
+
+        .icon .fa-instagram{
+            color: rgb(195, 60, 83);
+        }
+
+        .ig:hover{
+            background:  rgb(195, 60, 83);
+        }
+
+        .icon .fa-pinterest{
+            color: red;
+        }
+
+        .pt:hover{
+            background: red;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: purple;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="logo.png" alt=""></div>
+
+    <div class="search">
+      <form action="galery.html" method="get">
+      <label for="search-input"></label>
+      <input type="search" name="search" placeholder="Galery resmi">
+      <button type="submit">Cari</button>
+      </form>
+    </div>
+
+    <nav>
+        <a href="galery.html">Beranda</a>
+        <a href="makanan.html">Makanan</a>
+        <a href="hewan.html">Hewan</a>
+        <a href="background.html">Background</a>
+        <a href="anime.html">Anime</a>
+        <a href="game.html">Game</a>
+        <a href="education.html">Education</a>
+        <a href="coding.html">Codding</a>
+        <a href="sad.html">Sad</a>
+        <a href="world-asthetic.html">world asthetic</a>
+        <a href="japanese.html">Japanese</a>
+        <a href="al-irsyad.html">Al-irsyad</a>
+        <a href="indonesia.html">Indonesia</a>
+        <a href="student.html">Student</a>
+        <a href="art.html">Art</a>
+    </nav>
+
+    <div class="container">
+        <div class="world"><img src="world1.jpg" alt=""></div>
+        <div class="world"><img src="world2.jpg" alt=""></div>
+        <div class="world"><img src="world3.jpg" alt=""></div>
+        <div class="world"><img src="world4.jpg" alt=""></div>
+        <div class="world"><img src="world5.jpg" alt=""></div>
+        <div class="world"><img src="world6.jpg" alt=""></div>
+        <div class="world"><img src="world7.jpg" alt=""></div>
+        <div class="world"><img src="world8.jpg" alt=""></div>
+        <div class="world"><img src="world9.jpg" alt=""></div>
+        <div class="world"><img src="world10.jpg" alt=""></div>
+        <div class="world"><img src="world11.jpg" alt=""></div>
+        <div class="world"><img src="world12.jpg" alt=""></div>
+        <div class="world"><img src="world13.jpg" alt=""></div>
+        <div class="world"><img src="world14.jpg" alt=""></div>
+        <div class="world"><img src="world15.jpg" alt=""></div>
+        <div class="world"><img src="world16.jpg" alt=""></div>
+        <div class="world"><img src="world17.jpg" alt=""></div>
+        <div class="world"><img src="world18.jpg" alt=""></div>
+        <div class="world"><img src="world19.jpg" alt=""></div>
+        <div class="world"><img src="world20.jpg" alt=""></div>
+    </div>
+
+    <div class="main">
+        <p>Tolong follow akun media sosial kami, terimakasih.</p>
+        <div class="icon yt">
+            <i class="fa-brands fa-youtube"></i>
+            <span><a href="https://www.youtube.com/channel/UCADMdl5YkGax4Wme4e-a3Hw" target="_blank">Youtube</a></span>
+        </div>
+
+        <div class="icon twt">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span><a href="https://www.twitter.com" target="_blank">Twitter</a></span>
+        </div>
+
+        <div class="icon fb">
+           <i class="fa-brands fa-facebook-f"></i>
+            <span><a href="https://www.facebook" target="_blank">Facebook</a></span>
+        </div>
+
+        <div class="icon tt">
+            <i class="fa-brands fa-tiktok"></i>
+            <span><a href="https://www.tiktok.com/@chibi_bennet.genshin" target="_blank">Tiktok</a></span>
+        </div>
+
+        <div class="icon ig">
+            <i class="fa-brands fa-instagram"></i>
+            <span><a href="https://www.instagram.com/bennet_natlan29?igsh=MmFmMHY5bWdrZG5y" target="_blank">Instagram</a></span>
+        </div>
+
+        <div class="icon pt">
+            <i class="fa-brands fa-pinterest"></i>
+            <span><a href="https://id.pinterest.com/" target="_blank">Pinterest</a></span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PixelArt Studio | All Rights Reserved | Didukung oleh
+            <i class="fa-brands fa-pinterest"></i>
+            <span><a href="https://id.pinterest.com/" target="_blank">Pinterest</a></span>
+        </p>
+        </footer>
+</body>
+</html>
